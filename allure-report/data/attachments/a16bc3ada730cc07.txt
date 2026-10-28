@@ -1,0 +1,1 @@
+Running user can add a product to the cart

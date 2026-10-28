@@ -1,0 +1,1 @@
+Running user can remove a product from the cart
