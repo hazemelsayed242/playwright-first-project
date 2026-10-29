@@ -8,7 +8,7 @@
     "generate:reports": "npx allure generate ./allure-results --clean",
     "open:reports": "npx allure open ./allure-report",
     "pretest": "npm run clean:reports",
-    "posttest": "npm run generate:reports && npm run open:reports",
+    "posttest": "npm run generate:reports",
     "script:to:run": "npx playwright test pom",
     "test": "npm run script:to:run || npm run posttest"
   },
@@ -17,7 +17,7 @@
   "license": "ISC",
   "type": "commonjs",
   "devDependencies": {
-    "@playwright/test": "^1.62.1",
+    "@playwright/test": "^1.64.1",
     "@types/node": "^26.3.0",
     "allure-commandline": "^2.46.1",
     "allure-playwright": "^3.14.0",
