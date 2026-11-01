@@ -31,7 +31,7 @@ test.describe("Shopping Cart Suite", { tag: "@cart" }, () => {
   }) => {
     await loginPage.login(testData.username, testData.password);
     await loginPage.clickOnLoginButton();
-    await expect(page.getByText("Products", { exact: true })).toBeVisible();
+    await expect(page.getByText("item", { exact: true })).toBeVisible();
     await productPage.clickOnAddToCart();
     await productPage.clickOnShoppingCartButton();
     await expect(
