@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "clean:reports": "rimraf allure-results allure-report",
+    "clean:reports": "node -e \"const fs = require('node:fs'); for (const dir of ['allure-results', 'allure-report']) fs.rmSync(dir, { recursive: true, force: true });\"",
     "generate:reports": "allure generate ./allure-results --clean --single-file -o ./allure-report",
     "open:reports": "allure open ./allure-report",
     "pretest": "npm run clean:reports",
@@ -19,8 +19,8 @@
     "@types/node": "^26.3.0",
     "allure-commandline": "^2.46.1",
     "allure-playwright": "^3.14.0",
-    "mkdirp": "^3.0.1",
-    "rimraf": "^6.1.3"
+    "dotenv": "^18.0.9",
+    "mkdirp": "^3.0.1"
   },
   "dependencies": {
     "typescript": "^7.0.2"

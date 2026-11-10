@@ -1,0 +1,1 @@
+{"attachments":[],"errors":[{"message":"afterEach hook failed: TypeError: Cannot read properties of undefined (reading 'close')","trace":"TypeError: Cannot read properties of undefined (reading 'close')\n    at D:\\#Software Testing\\Tutorials\\Omar O. Elbably\\Playwright\\playwright first project\\tests\\pom.spec.ts:34:16","status":"broken","timestamp":1794298697086}]}
